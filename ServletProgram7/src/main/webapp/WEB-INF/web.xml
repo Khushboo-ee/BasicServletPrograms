@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>ServletProgram7</display-name>
+  <welcome-file-list>
+    <welcome-file>entry.html</welcome-file>
+    <welcome-file>success.html</welcome-file>
+    <welcome-file>fail.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+		<servlet-name>DBoperations</servlet-name>
+		<servlet-class>com.simpli.servlets.p7.DBoperations</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DBoperations</servlet-name>
+		<url-pattern>/dbop</url-pattern>
+	</servlet-mapping>
+	 
+</web-app>
