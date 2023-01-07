@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -37,6 +38,9 @@ public class Form extends HttpServlet {
 		}
 		else {
 			writer.println("<h3>You have not agreed to the terms and condition</h3>");
+			//to include index.html page here
+			RequestDispatcher rd = req.getRequestDispatcher("index.html");
+			rd.include(req, resp);
 		}
 	}
 }
