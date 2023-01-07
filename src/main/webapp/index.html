@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.main{
+	width: 50%;
+	border: 2px solid black;
+	padding: 4px;
+	margin: auto;
+	font-size: 20px;
+
+}
+</style>
+</head>
+<body>
+<div class="main">
+<h1>Enrollment form</h1>
+
+<form action="webform" method="post">
+<table>
+<tr>
+	<td>Enter your name:</td>
+	<td><input type="text" name="user_name"></td>
+	
+	
+
+</tr>
+<tr>
+	<td>Enter your age:</td>
+	<td><input type="text" name="user_age"></td>
+</tr>
+<tr>
+	<td>Select your gender:</td>
+	<td><input type="radio" name="user_gender" value="male">Male <input type="radio" name="user_gender" value="female">Female <input type="radio" name="user_gender" value="others">Others</td>
+	
+</tr>
+<tr>
+	<td>Enter your current city:</td>
+	<td><input type="text" name="user_city"></td>
+</tr>
+<tr>
+	<td>Select your course</td>
+	<td>
+	<select name="user_course">
+		<option value="html">HTML </option>
+		<option value="css">CSS </option>
+		<option value="python"> Python </option>
+		<option value="java">Java </option>
+	</select>
+	</td>	
+</tr>
+<tr>
+	<td>Do you agree to the terms and conditions</td>
+	<td><input type="checkbox" value="checked" name="condition"></td>
+</tr>
+<tr style="text-align: centre">
+<td>
+</td>
+<td>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+</td>
+</tr>
+</table>
+</form>
+</div>
+</body>
+</html>
